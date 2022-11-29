@@ -1,0 +1,55 @@
+.Logo  {
+    height: 100px;
+    width: 150px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.components {
+    display: flex;
+    width: 1000px;
+    justify-content: inherit;
+    margin-top: 50px; 
+    margin-right: 50px;
+    list-style:none;
+}
+li {
+    background-color: black;
+    color: yellow;
+}
+
+.efects{
+    width:70px;
+}
+
+.efects:hover {
+    animation-name: movimiento;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: relative;
+    animation-fill-mode: both;
+    animation-direction: alternate ;
+    
+}
+
+
+@keyframes movimiento {
+    0%{ transform: translateX(0%);
+        transform: translateY(0%);}
+
+    100%{transform: translateX(200px);
+        transform: translateY(10px)}
+}
+
+
+.carrito {
+    display: flex;
+    font-size: 20px;
+    
+}
+
+#number {
+  margin-top: 0px;
+}
